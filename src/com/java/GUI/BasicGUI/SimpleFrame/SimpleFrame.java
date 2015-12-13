@@ -38,6 +38,17 @@ public class SimpleFrame extends JFrame {
         this.setVisible(true);
     }
 
+    /*
+    Makes frame visible and sets the title text
+    and the size of the frame
+     */
+    public void showIt(String title, int width, int height, Boolean b)
+    {
+        this.setTitle(title);
+        this.setSize(width,height);
+        this.setVisible(b);
+    }
+
     //Makes frame invisible
     public void hideIt()
     {
