@@ -14,10 +14,22 @@ public class LightModel {
         counter = 0;
     }
 
-    public int changeText(JLabel label)
+    public void changeText(JLabel label)
     {
         label.setVisible(true);
-        counter++;
+        setCounter(counter++);
+
+        if (this.getCounter() == 4) {
+            setCounter(1);
+        }
+
+    }
+
+    public int getCounter() {
         return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
     }
 }
