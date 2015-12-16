@@ -44,31 +44,29 @@ public class LightPanel extends JPanel{
 
     public void changeColorOfText()
     {
-        lightModel = new LightModel();
+        //lightModel = new LightModel();
         countTextLight = lightModel.getCounter();
 
         if (countTextLight == 1) {
-            redLabel.setVisible(true);
+            lightModel.changeText(redLabel);
             yellowLabel.setVisible(false);
             greenLabel.setVisible(false);
 
-            lightModel.setCounter(countTextLight++);
         }
 
         else if (countTextLight == 2) {
-            yellowLabel.setVisible(true);
+            lightModel.changeText(yellowLabel);
             redLabel.setVisible(false);
             greenLabel.setVisible(false);
 
-            lightModel.setCounter(countTextLight++);
         }
 
         else if (countTextLight == 3) {
-            greenLabel.setVisible(true);
+            lightModel.changeText(greenLabel);
             redLabel.setVisible(false);
             yellowLabel.setVisible(false);
 
-            lightModel.setCounter(countTextLight++);
+
         }
     }
 }

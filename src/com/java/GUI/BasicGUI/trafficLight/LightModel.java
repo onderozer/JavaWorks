@@ -17,7 +17,7 @@ public class LightModel {
     public void changeText(JLabel label)
     {
         label.setVisible(true);
-        setCounter(counter++);
+        setCounter(counter+1);
 
         if (this.getCounter() == 4) {
             setCounter(1);
