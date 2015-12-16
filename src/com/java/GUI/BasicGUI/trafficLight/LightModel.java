@@ -11,7 +11,7 @@ public class LightModel {
 
     public LightModel()
     {
-        counter = 0;
+        counter = 1;
     }
 
     public void changeText(JLabel label)
