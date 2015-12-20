@@ -19,6 +19,7 @@ public class MouseEventFrame extends SimpleFrame{
 
         MyMousePositionListener posListen = new MyMousePositionListener(stPanel);
         mePanel.addMouseMotionListener(posListen);
+        //posListen.changePanelColor();
 
         MyMouseListener mouListen = new MyMouseListener(stPanel);
         mePanel.addMouseListener(mouListen);

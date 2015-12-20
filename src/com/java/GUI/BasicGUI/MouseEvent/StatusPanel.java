@@ -39,6 +39,7 @@ public class StatusPanel extends JPanel{
         YCoord.setText("y :" + Integer.toString(y));
     }
 
+
     public void setInOut(String str)
     {
         inOut.setText(str);
@@ -48,6 +49,12 @@ public class StatusPanel extends JPanel{
     {
         clickCount++;
         counts.setText(Integer.toString(clickCount));
+    }
+
+    public void repaintPanel()
+    {
+        this.setBackground(Color.yellow);
+        this.repaint();
     }
 
 
